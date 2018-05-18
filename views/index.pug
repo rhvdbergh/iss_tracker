@@ -1,10 +1,16 @@
 extends layout
 
 block content
-  h1 Hello, world!
-    div.container
-      div.row
-        div#map.col-12
+  .jumbotron.jumbotron-fluid
+    .container
+      h1.display-4 Space penny for your thoughts!
+      p.lead
+        | Tracking the International Space Station.
+
+
+  div.container
+    div.row
+      div#map.col-12
   // Optional JavaScript
   // jQuery first, then Popper.js, then Bootstrap JS
   script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
