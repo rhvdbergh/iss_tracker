@@ -4,7 +4,7 @@ const config = require('../bin/config.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Express', googleMapsKey: config.googleMapsKey });
 });
 
 module.exports = router;
