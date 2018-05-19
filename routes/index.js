@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 const config = require('../bin/config.js');
 const fetch = require('node-fetch');
+const Twit = require('twit');
+const T = new Twit(config.twitter);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
