@@ -25,7 +25,6 @@ router.get('/', function(req, res, next) {
         let tweetsWithoutCoordinates = [];
 
         data.statuses.forEach(tweet => {
-          console.log('tweet.coordinates: ', tweet.coordinates);
           if (tweet.coordinates) { // check to see if there are coordinates 
             tweets.push({
               text: tweet.text, 
